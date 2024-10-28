@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Miroslav Genov">
+  <title>Miroslav Genov - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      scroll-snap-align: start;
+      padding: 20px;
+      flex-direction: column;
+    }
+    #home {
+      background: url('9a8dd04a2e8847fd1251a8233b81d563.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    #work, #video {
+      background-color: #f4f4f4;
+    }
+    #about, #contact {
+      background-color: #fff;
+    }
+    h1, h2 {
+      font-size: 4rem;
+      color: #333;
+      text-align: center;
+    }
+    .portfolio-gallery {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      flex-wrap: wrap;
+    }
+    .portfolio-item {
+      margin: 10px;
+      width: 30%;
+      height: 200px;
+      background-color: #ddd;
+      transition: transform 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.2); /* Expands the box by 20% */
+    }
+    .portfolio-item div {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+    }
+    .portfolio-item.project1 div {
+      background-image: url('9a8dd04a2e8847fd1251a8233b81d563.jpg');
+    }
+    .portfolio-item.project2 div {
+      background-image: url('9a8dd04a2e8847fd1251a8233b81d563.jpg');
+    }
+    .portfolio-item.project3 div {
+      background-image: url('9a8dd04a2e8847fd1251a8233b81d563.jpg');
+    }
+    .portfolio-item p {
+      font-size: 1rem;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+    }
+    .contact-info {
+      text-align: center;
+    }
+    .contact-info a {
+      margin: 10px;
+      text-decoration: none;
+      color: #000;
+    }
+    .video-container {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+      margin: 20px auto;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Contact Form Styling */
+    .contact-form {
+      
+     width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    /* Disable textarea resizing */
+    .contact-form textarea {
+      resize: none;
+    }
+
+    .contact-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <section id="home">
+    <h1>Miroslav Genov</h1>
+  </section>
+
+  <section id="work">
+    <h2>My Work</h2>
+    <div class="portfolio-gallery">
+      <div class="portfolio-item project1">
+        <div></div>
+        <p>Scoobert is a brave dog known for his heroic adventures. In this project, he saved the city from an alien invasion.</p>
+      </div>
+      <div class="portfolio-item project2">
+        <div></div>
+        <p>This time, Scoobert discovered a hidden treasure while solving a century-old mystery, showcasing his intelligence and courage.</p>
+      </div>
+      <div class="portfolio-item project3">
+        <div></div>
+        <p>Here, Scoobert befriends a group of astronauts and helps them return home from a faraway planet. His loyalty knows no bounds!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ullam optio molestias facere laborum a beatae eaque sit dicta enim, laboriosam natus sequi quis sint voluptatibus! Nobis dolor natus dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ullam optio molestias facere laborum a beatae eaque sit dicta enim, laboriosam natus sequi quis sint voluptatibus! Nobis dolor natus dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ullam optio molestias facere laborum a beatae eaque sit dicta enim, laboriosam natus sequi quis sint voluptatibus! Nobis dolor natus dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ullam optio molestias facere laborum a beatae eaque sit dicta enim, laboriosam natus sequi quis sint voluptatibus! Nobis dolor natus dolorem.</p>
+  </section>
+
+  <!-- YouTube Video Section -->
+  <section id="video">
+    <h2>Featured Video</h2>
+    <div class="video-container">
+      <iframe width="965" height="543" src="https://www.youtube.com/embed/N1il6kOBlVQ" title="Scoobert saves the world" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <p>Email: <a href="mailto:mgenov4@gmail.com">mgenov4@gmail.com</a></p>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="submit_form.php" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
